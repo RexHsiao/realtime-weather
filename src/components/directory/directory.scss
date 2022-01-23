@@ -23,7 +23,7 @@ a {
         .remover-container {
             z-index: 9999;
             position: absolute;
-            left: 335px;
+            left: 325px;
             top:-35px;
             display:none;
             &:hover{
@@ -36,7 +36,13 @@ a {
 
 @media (max-width : 767px) {
     .directory {
-        padding-left: 3.5%;
-        padding-right: 3.5%;
+        .newCitiesCard{
+            .remover-container {
+                display:inline;
+                left: 50%;
+                transform: translateX(-50%);
+                top:83%;
+            }
+        }
     }
 }
