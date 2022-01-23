@@ -12,22 +12,27 @@ const Form = ({submitSearch, toggle}) => {
     return (
         <div className="form">
             <form onSubmit={onSubmit}>
-                <input 
-                    type="text" 
-                    aria-label="location" 
-                    className="input form-control"
-                    placeholder="Search for location"
-                    required 
-                    value={location}
-                    onChange={e => setLocation(e.target.value)}
-                />
-                <button 
+                <div>
+                    <input 
+                        type="text" 
+                        aria-label="location" 
+                        className="input form-control"
+                        placeholder="Search for location"
+                        required 
+                        value={location}
+                        onChange={e => setLocation(e.target.value)}
+                    />
+                </div>
+                <div>
+                    <button 
                     type="submit" 
                     className={`button button-${toggle?'dark':''}`}
                     onClick={onSubmit}
-                >
-                    SEARCH
-                </button>
+                    >
+                        SEARCH
+                    </button>
+                </div>
+                
             </form>
         </div>
     );
