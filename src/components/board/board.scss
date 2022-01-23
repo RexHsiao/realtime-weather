@@ -1,12 +1,12 @@
 @import '../../style.scss';
 
 .board{
-    width: 80%;
-    height:80%;
+    width: 70%;
+    height:65%;
     max-width: 1300px;
-    min-width: 360px;
-    min-height: 650px;
-    max-height: 800px;
+    min-width: 340px;
+    min-height: 600px;
+    max-height: 700px;
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.5);
     background-image: linear-gradient(to top right, rgba(0, 255, 155, 0.4), rgba(0, 62, 255, 0.4));
@@ -23,6 +23,7 @@
 
 @media (max-width : 767px) and (max-height : 900px){
     .board{
-        top: 43%;
+        top: 36%;
+        min-width: 330px;
     }
 }

@@ -15,3 +15,11 @@
         width: 95%;
     }
 }
+
+@media (max-width : 767px){
+    .upcoming-box{
+        .weekList{
+            padding-left: 0%;padding-right: 0%;
+        }
+    }
+}

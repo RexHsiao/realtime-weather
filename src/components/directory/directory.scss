@@ -11,7 +11,7 @@ a {
     overflow-x: scroll;
     padding: 2.5%;
     padding-left: 5%;
-    
+    padding-right: 5%;
     .newCitiesCard{
         position: relative;
 
@@ -37,5 +37,6 @@ a {
 @media (max-width : 767px) {
     .directory {
         padding-left: 3.5%;
+        padding-right: 3.5%;
     }
 }

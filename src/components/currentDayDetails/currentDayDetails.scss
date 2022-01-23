@@ -62,7 +62,7 @@
         justify-content: space-between;
         padding-left: 6%;padding-right: 6%;
         position: relative;
-        top:12%;
+        top:3%;
     }
 }
 
@@ -77,10 +77,19 @@
 @media (max-width : 767px){
     .currentDetails-container{
         .basicInfo{
-            top: 15%;
+            top: 14%;
             .weatherInfo{
+                .weatherIcon{
+                    width: 120px;
+                }
                 .weatherStatus {
-                    margin-left:-1%;
+                    margin-left:-9%;
+                    h2{
+                        font-size: 35px;
+                    }
+                    h5{
+                        font-size: 20px;
+                    }
                 }
             }
             .location{
@@ -97,6 +106,9 @@
                     display: none;
                 }
             }
+        }
+        .detailInfo {
+            top:10%;
         }
     }
     
