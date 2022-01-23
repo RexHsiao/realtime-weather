@@ -21,7 +21,7 @@ const CurrentDayForecast = ({
         <Card toggle={toggle} id={location} submitSearch={submitSearch} infoSetting={infoSetting} date={date}>    
             <div><h3>{location}</h3></div>
             <div className="status-img">
-                <img width="200" src={weatherIcon} alt="" />
+                <img width="180" src={weatherIcon} alt="" />
             </div>
             <div className="deg">
                 {temperature}°

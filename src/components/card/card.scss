@@ -1,9 +1,9 @@
 @import '../../style.scss';
 
 .card {
-    height: 650px;
+    height: 600px;
     width: 300px;
-    min-width: 360px;
+    min-width: 340px;
     border-radius:15px;
     margin-right: 65px;
     background-color: white;
@@ -25,7 +25,7 @@
         display: flex;
         justify-content: center;
         h3{
-            font-size:32px;
+            font-size:30px;
             font-weight: 300;
         }
     }
@@ -35,7 +35,6 @@
         padding: 10%;
         margin-top: 20px;
         >div>div{
-            // border: 1px solid #fff;
             width: 100px;
             display: flex;
             justify-content: center;
@@ -79,3 +78,22 @@
     color: white;
 }
 
+@media (max-width : 767px) {
+    .card {
+        >div{
+            h3{
+                font-size:25px;
+                font-weight: 300;
+            }
+        }
+        .maxMinDeg {
+            >div>div{
+                &.degree{
+                    font-size: 20px;
+                    font-weight: 300;
+                    margin-top: 5px;
+                }   
+            }
+        }
+    }
+}
